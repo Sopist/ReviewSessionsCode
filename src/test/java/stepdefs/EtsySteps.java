@@ -34,7 +34,7 @@ public class EtsySteps {
 	   DesiredCapabilities caps = DesiredCapabilities.chrome();
 	   caps.setPlatform(Platform.ANY);
 	   driver = new RemoteWebDriver(
-			             new URL("http://34.223.219.142:4444/wd/hub"),
+			             new URL("ec2-18-222-148-99.us-east-2.compute.amazonaws.com:4444/wd/hub"),
 			   			   caps);
 	   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  // driver.manage().window().fullscreen();
